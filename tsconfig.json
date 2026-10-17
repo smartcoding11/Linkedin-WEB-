@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@screens/*": ["screens/*"],
+      "@flows/*": ["flows/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@test-data/*": ["test-data/*"]
+    },
+    "types": ["node", "mocha", "@wdio/globals/types"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "allure-results", "allure-report", "backup", "tools", "logs"]
+}
